@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintLeft_toLeftOf="@+id/content_frame"
+            app:layout_constraintRight_toRightOf="@+id/content_frame"
+            app:layout_constraintTop_toTopOf="@+id/content_frame"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <LinearLayout
+            android:id="@+id/ll_include_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/content_frame"
+            app:layout_constraintLeft_toLeftOf="@id/content_frame"
+            app:layout_constraintRight_toRightOf="@id/content_frame"
+            android:layout_below="@id/toolbar">
+
+            <include layout="@layout/player_layout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintLeft_toLeftOf="@id/content_frame"
+            app:layout_constraintRight_toRightOf="@id/content_frame"
+            android:layout_below="@id/ll_include_controls"
+            android:background="@color/colorPrimary">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:tabBackground="@color/colorPrimary"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/text_color"
+                app:tabTextColor="@color/off_color" />
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/songs_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_tab_layout"
+            app:layout_constraintBottom_toTopOf="@id/ll_include_controls"
+            android:layout_below="@id/ll_tab_layout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            android:src="@drawable/refresh_icon"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_anchor="@id/songs_viewpager"
+            app:layout_constraintBottom_toTopOf="@+id/ll_include_controls"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/drawer_color"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/drawer_header_layout"
+        app:itemIconTint="@color/text_color"
+        app:itemTextColor="@color/text_color"
+        app:menu="@menu/navigation_menu" />
+
+</android.support.v4.widget.DrawerLayout>
