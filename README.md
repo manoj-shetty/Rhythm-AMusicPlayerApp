@@ -16,10 +16,12 @@ These features are implemented with the help of :-
 4. SQLite Database
 5. Adapters
 6. Accelerometer
-![img80](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/ceb11019-79ea-492a-8193-49a8be4b3879)
-![img81](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/22eabc17-7562-41e6-b74b-412915623a31)
-![img84](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/47710d53-6ac5-40d0-ac76-ca5d6f9904d6)
-![img85](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/904fbad8-d60b-4846-99a9-b2a66a1bcbdc)
-![img88](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/eb581286-8304-4b9b-b0bf-233f10a11017)
-![img89](https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/06c10b0e-8a54-4391-8832-cb7a05426f58)
+
+# Screenshots
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/ceb11019-79ea-492a-8193-49a8be4b3879" height="600">&emsp;&emsp;&emsp;&emsp;
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/22eabc17-7562-41e6-b74b-412915623a31" height="600">&emsp;&emsp;&emsp;&emsp;
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/47710d53-6ac5-40d0-ac76-ca5d6f9904d6" height="600"></br>
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/904fbad8-d60b-4846-99a9-b2a66a1bcbdc" height="600">&emsp;&emsp;&emsp;&emsp;
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/eb581286-8304-4b9b-b0bf-233f10a11017" height="600">&emsp;&emsp;&emsp;&emsp;
+<img src="https://github.com/manoj-shetty/Rhythm-AMusicPlayerApp/assets/70282405/06c10b0e-8a54-4391-8832-cb7a05426f58" height="600">
 
